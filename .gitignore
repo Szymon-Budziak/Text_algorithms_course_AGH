@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# My folders and files
+Labs_1/passages-head.tsv
+.idea
