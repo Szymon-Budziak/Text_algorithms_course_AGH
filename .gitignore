@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # My folders and files
-Labs_1/passages-head.tsv
+Lab_1/passages-head.tsv
 .idea
