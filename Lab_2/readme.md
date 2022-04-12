@@ -4,7 +4,7 @@
  - aabbabd
  - ababcd
  - abcbccd
- - załączony plik.
+ - załączony plik (`1997_714_head.txt`).
 2. Upewnij się, że każdy łańcuch na końcu posiada unikalny znak (marker), a jeśli go nie ma, to dodaj ten znak.
 3. Zaimplementuj algorytm konstruujący strukturę trie, która przechowuje wszystkie sufiksy łańcucha danego na wejściu.
 4. Zaimplementuj algorytm konstruujący drzewo sufiksów.
