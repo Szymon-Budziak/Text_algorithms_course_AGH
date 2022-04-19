@@ -1,4 +1,4 @@
-## Labs 1
+## Lab 1
 1. Zaimplementuj algorytmy wyszukiwania wzorców:
  - naiwny,
  - automat skończony,

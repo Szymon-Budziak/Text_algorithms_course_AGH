@@ -1,4 +1,4 @@
-## Labs 2
+## Lab 2
 1. Przyjmij następujący zbiór danych wejściowych:
  - bbb$
  - aabbabd
