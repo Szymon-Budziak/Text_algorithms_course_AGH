@@ -1,0 +1,84 @@
+One of the simplest and n a t u r a l types of information representation is by means
+of written texts. This type of d a t a is characterized by t h e fact t h a t it can
+be written down as a long sequence of characters. Such linear a sequence
+is called a text. T h e texts are central in "word processing" systems, which
+provide facilities for t h e manipulation of texts. Such systems usually process
+objects t h a t are quite large. For example, this book probably contains more
+t h a n a million characters. Text algorithms occur in many areas of science and
+information processing. Many text editors and programming languages have
+facilities for processing texts. In biology, text algorithms arise in the study
+of molecular sequences. T h e complexity of text algorithms is also one of t h e
+central and most studied problems in theoretical computer science. It could
+be said t h a t it is the domain in which practice and theory are very close to
+each other.
+T h e basic textual problem in stringology is called pattern matching. It is
+used to access information and, no doubt, at this moment m a n y computers
+are solving this problem as a frequently used operation in some application
+system. P a t t e r n matching is comparable in this sense to sorting, or to basic
+arithmetic operations.
+Consider the problem of a reader of the French dictionary " G r a n d Larousse,"
+who wants all entries related to the n a m e "Marie-Curie-Sklodowska." This is
+a n example of a p a t t e r n matching problem, or string matching. In this case,
+the n a m e "Marie-Curie-Sklodowska" is the p a t t e r n . Generally we m a y want to
+find a string called a pattern of length m inside a text of length n, where n is
+greater t h a n m. T h e p a t t e r n can be described in a more complex way to denote
+a set of strings and not just a single word. In many cases n is very large. In
+genetics the p a t t e r n can correspond to a gene t h a t can be very long; in image
+
+T h e search of words or p a t t e r n s in static texts is quite a different question
+t h a n the previous pattern-matching mechanism. Dictionaries, for example,
+are organized in order to speed u p the access to entries. Another example
+of the same question is given by indexes. Technical books often contain a n
+index of chosen terms t h a t gives pointers to p a r t s of the text related to words
+in the index. T h e algorithms involved in the creation of an index form a
+specific group. T h e use of dictionaries or lexicons is often related t o n a t u r a l
+language processing. Lexicons of programming languages are small, and their
+representation is not a difficult problem during the development of a compiler.
+To the contrary, English contains approximately 100,000 words, a n d even twice
+t h a t if inflected forms are considered. In French, inflected forms produce more
+t h a n 700,000 words. T h e representation of lexicons of this size makes the
+problem a bit more challenging.
+A simple use of dictionaries is illustrated by spelling checkers. T h e UNIX
+command, spell, reports the words in its input t h a t are not stored in the lexi-
+con. This rough approach does not yield a pertinent checker, b u t , practically,
+it helps to find typing errors. T h e lexicon used by spell contains approxi-
+mately 70,000 entries stored within less t h a n 60 kilobytes of random-access
+memory. Quick access to lexicons is a necessary condition for producing good
+parsers. T h e d a t a structure useful for such access is called an index. In our
+book indexes correspond to d a t a structures representing all factors of a given
+(presumably long) text. We consider problems related to the construction of
+such structures: suffix t r e e s , d i r e c t e d a c y c l i c w o r d g r a p h s , f a c t o r a u -
+t o m a t a , suffix arrays. T h e PAT
+tool developed at the N O E D Center
+(Waterloo, Canada) is an implementation of one of these structures tailored
+to work on large texts. There are several applications t h a t effectively require
+some understanding of phrases in n a t u r a l languages, such as d a t a retrieval
+systems, interactive software, a n d character recognition.
+An image scanner is a kind of photocopier. It is used to give a digitized
+version of a n image. W h e n the image is a page of text, the n a t u r a l o u t p u t of the
+scanner must be in a digital form available to a text editor. T h e transformation
+of a digitized image of a text into a usual computer representation of the text
+is realized by a n Optical Character Recognition ( O C R ) . Scanning a text with
+an O C R can be 50 times faster t h a n retyping the text on a keyboard. T h u s ,
+O C R softwares are likely to become more common. B u t they still suffer from
+a high degree of imprecision. T h e average rate of error in the recognition of
+characters is approximately one percent. Even if this may h a p p e n to be rather
+small, this means t h a t scanning a book produces approximately one error per
+line. This is compared with the usually very high quality of texts checked
+by specialists. Technical improvements on the hardware can help eliminate
+certain kinds of errors occurring on scanned texts in printed forms. But this
+cannot alleviate the problem associated with recognizing texts in printed forms.
+Reduction of the number of errors can thus only be achieved by considering the
+context of the characters, which assumes some understanding of the structure
+of the text. Image processing is related to the problem of two-dimensional
+pattern matching. Another related problem is the data structure for all
+subimages, which is discussed in this book in the context of the dictionary
+of basic factors.
+The theoretical approach to the representation of lexicons is either by means
+of trees or finite state automata. It appears that both approaches are equally
+efficient. This shows the practical importance of the automata theoretic
+approach to text problems. At LITP (Paris) and IGM (Marne-la-Vallee)
+we have shown that the use of automata to represent lexicons is particularly
+efficient. Experiments have been done on a 700,000 word lexicon of LADL
+(Paris). The representation supports direct access to any word of the lexicon
+and takes only 300 kilobytes of random-access memory.
